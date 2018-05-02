@@ -1,0 +1,268 @@
+/**Added New**/
+@font-face
+{
+	font-family: "Palanquin";
+	src: url("../fonts/Palanquin-Regular.ttf");
+}
+/**--**/
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: Palanquin;
+	font-size: 20px;
+}
+
+nav.navbarfluid
+{
+	width: 100%;
+
+	background-color: #d7d9dd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/**Added New**/
+nav.navbarfluid > a
+{
+	color: #5d5e60;
+	text-decoration: none;
+	padding: 10px;
+	transition: 500ms background-color ease-in-out;
+}
+
+nav.navbarfluid > a:hover
+{
+	background-color: #cacdd1;
+	padding: 10px;
+}
+/*---*/
+nav.navbarfluid > a.active	
+{
+	color: #5d5e60;
+	background-color: #edf1f9;
+	text-decoration: none;
+	padding: 11px;
+}
+.tab {  
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #eaf1ff;
+
+}
+
+.tab > nav.tablist { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid orange;
+}
+.tab > nav.tablist > a#tabbutton{ 
+	color: #5d5e60;
+	padding: 10px;
+	text-decoration: none;
+
+}
+.tab > .tabbody
+{
+	width: 100%;
+}
+
+
+.tab > nav.tablist > a.active{ 
+	color: #5d5e60;
+	background-color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+#tabaccount
+{
+	padding: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+input
+{
+	font-size: 15px;
+	padding: 5px;
+}
+/**Added New**/
+
+input[type=text]
+{
+	border: 1px solid black;
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+}
+input[type=password]
+{
+	
+	border: 1px solid black;
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;	
+}
+input[type=email]
+{
+	
+	border: 1px solid black;
+	box-shadow: rgba(255,0,0,0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(255,0,0,0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(255,0,0,0.2) 0px 0px 8px;	
+}
+input:focus{
+	border: 3px solid orange;
+}
+button.normal
+{
+	background-color: #5b8ff7;
+	border: 1px solid #5b8ff7;
+	color: white;
+	padding: 7px 30px;
+	transition: 500ms background-color,border ease-in-out;
+}
+button.normal:hover
+{
+	background-color: orange;
+	border: 1px solid orange;
+	cursor: pointer;
+}
+/**---**/
+
+.newsmainbody
+{
+	padding: 30px;
+}
+
+.fluidtable
+{
+	width: 100%;
+}
+.fluidtable > .fluidrow
+{
+	padding: 5px;
+	display: block;
+}
+.fluidtable > .fluidrow >  .fluidcol
+{
+	width: 250px;
+	display: inline-block;
+}
+.mobilemenu
+{
+	text-align: right;
+	padding: 10px;
+	display: none;
+}
+.mobiledisplay
+{
+	display: none;
+}
+.notifybox
+{
+	background-color: orange;
+	padding: 7px;
+	
+}
+.errorbox
+{
+	background-color: red;
+	margin: 20px;
+	padding: 10px;
+}
+.eventmainbox
+{
+	font-size: 16px;
+	margin: 20px;
+	display: block;
+}
+.eventbox
+{
+	margin: 5px;
+	width: 24%;
+	height: 200px;
+	float: left;
+	border: 1px solid black;
+}
+.eventbox > section.datetime
+{
+	text-align: right;
+	background-color: orange;
+	font-size: 14px;
+}
+.eventbox > header
+{
+	padding: 5px;
+	background-color: blue;
+	color: white;
+}
+.eventbox > .eventboxbody
+{
+	padding: 5px;
+}
+/**
+Section Tags goes in here
+**/
+section.news
+{
+	background-color: #dee1e5;
+	width: 100%;
+	margin-bottom: 20px;
+}
+section.news > header
+{
+	background-color: #58aafc;
+	color: white;
+	padding: 5px;
+}
+section.news > .newsbody
+{
+	padding: 10px;
+}
+/**
+
+	Media queries
+**/
+@media all and (min-width: 300px) and (max-width: 500px)
+{
+	.eventbox
+	{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	.mobiledisplay
+	{
+		background-color: grey;
+		color: white;
+		padding-left: 20px;
+		display: block;
+	}
+	nav.navbarfluid > a
+	{
+		padding: 5px;
+		display: block;
+	}
+	.fluidtable > .fluidrow >  .fluidcol
+	{
+		width: 250px;
+		display: block;
+	}
+	.mobilemenu
+	{
+		text-align: right;
+		padding: 10px;
+		display: inline-block;
+	}
+	#dropdown
+	{
+		display: none;
+	}
+	.mobilemenu > .menubar
+	{
+
+		width: 30px;
+		background-color: white;
+	}
+
+}
